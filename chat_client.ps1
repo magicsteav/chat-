@@ -23,6 +23,7 @@ function Receive-Messages {
         } catch {
             Write-Host "Disconnected from server"
             $client.Close()
+            break
         }
     }
 }
